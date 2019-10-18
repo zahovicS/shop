@@ -121,6 +121,7 @@
 	border-radius: 10px;
 	box-shadow: 0 0 3px black;
 	margin: 10px 2px;
+	z-index: -2;
 }
 
 .productos__imagen{
