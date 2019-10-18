@@ -1,9 +1,5 @@
-
-
-<?php 
-	
-	include "views/base.php";
-	sup();
-	inf();
-
+<?php 	
+	include "controllers/controllerviews.php";
+	$objpag=new controllerviews();
+	$objpag->shop();
 ?>
