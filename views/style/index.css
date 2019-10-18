@@ -127,7 +127,10 @@
 	width: 90%;
 	margin: auto;
 	height: 200px;
-	border: solid;
+}
+
+.productos__imagen img{
+	width: 100%;
 }
 
 .productos__nombre{

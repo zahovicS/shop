@@ -1,5 +1,10 @@
-<?php 	
-	include "controllers/controllerviews.php";
-	$objpag=new controllerviews();
-	$objpag->shop();
+
+
+<?php 
+	
+	include "controllers/controllerViews.php";	
+
+	$pagina=new controllersViews();
+	$pagina->shop();
+
 ?>
