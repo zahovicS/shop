@@ -40,7 +40,7 @@
 				
 				<p class="productos__precio">
 					<label>{$campos["precio"]}</label>
-					<input type="number" min="1" name="cantidad" class="productos__cantidad">
+					<input type="number" min="1" value="0" name="cantidad" class="productos__cantidad">
 				</p>
 				<button type="submit" class="productos__add">Agregar</button>
 				</div>

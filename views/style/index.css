@@ -122,7 +122,12 @@
 	box-shadow: 0 0 3px black;
 	margin: 10px 2px;
 }
-
+table,td,th
+{
+	text-align: center;
+	padding: 2px 2px;
+	border:1px solid red;
+}
 .productos__imagen{
 	width: 90%;
 	margin: auto;
