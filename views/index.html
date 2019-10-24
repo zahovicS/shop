@@ -107,24 +107,19 @@
 	<script type="text/javascript">
 		let menu=document.querySelectorAll(".menu__centro>.menu__item");
 		let subMenu=document.querySelectorAll(".submenu");
-
 		for (let i = 0; i < menu.length; i++) {
 			if(i==0){
-
 			}else{
 				menu[i].addEventListener("mouseover",()=>{
 					subMenu[i].classList.toggle("submenu--show");
 				});
 			}
 		}
-
 		productos.addEventListener("mouseover",()=>{
 			for (var i = 0; i < subMenu.length; i++) {
 				subMenu[i].classList.remove("submenu--show");
 			}
 		});
-
-
 	</script>
 </body>
 </html>
