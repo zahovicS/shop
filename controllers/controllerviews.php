@@ -25,6 +25,8 @@
 		{
 			session_start();
 			sup();
+			include "views/spot.html";
+
 			extract($_POST);
 			session_start();
 			$_SESSION["productos"].=",".$producto;
@@ -68,11 +70,14 @@
 			echo "<td colspan='4'>",array_sum($to),"</td>";
 			echo "</tr>";
 			echo "</table>";
+			echo "<button type='submit' id='comprar'>Realizar Compra</button><br />";
 			echo "<a href='index.php'>comprar mas</a>";
 			echo "</br>";
 			echo "<a href='salir.php'>Cerrar sesion</a>";
 			inf();
 		}
+
+
 	}
 
  ?>

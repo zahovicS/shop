@@ -136,6 +136,10 @@ function inf()
 			}
 		});
 
+		comprar.addEventListener("click",()=>{
+			spot.classList.add("spot--Show");
+			document.querySelector("body").style.overflow="hidden";
+		});
 
 	</script>
 </body>
