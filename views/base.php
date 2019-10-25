@@ -139,6 +139,22 @@ function inf()
 		comprar.addEventListener("click",()=>{
 			spot.classList.add("spot--Show");
 			document.querySelector("body").style.overflow="hidden";
+			document.querySelector(".spot__image").classList.add("spot--Animation");
+			setTimeout(function(){
+				console.log("1 segundo despues");
+				document.querySelector(".spot__congratulation").classList.add("spot__congratulation--show");
+				},1000)
+			setTimeout(function(){
+
+				spot.classList.remove("spot--Show");
+				},2000);
+
+		});
+
+		window.addEventListener("keydown",(e)=>{
+			if(e.key=="F5"){
+				e.preventDefault();
+			}
 		});
 
 	</script>

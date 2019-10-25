@@ -188,7 +188,50 @@ table,td,th
 	width: 100%;
 }
 
+.spot__image{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform:translate(500px,-50%);
+	opacity: 0;
+}
+
+.spot--Animation{
+	animation-name: Compra;
+	animation-duration: 1s;
+	animation-timing-function: ease-in; 
+}
+
+.spot__congratulation{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0,0);
+	font-size: 50px;
+	color: red;
+	transition: transform 0.5s ease-in;
+}	
+
+.spot__congratulation--show{
+	transform: translate(-50%,-50%) scale(1,1);
+}
+
 .spot--Show{
 	opacity: 1;
 	pointer-events: auto;
+}
+
+
+@keyframes Compra{
+
+	from{
+		transform: translate(0,-50%);
+		opacity: 1;
+	}
+
+	to{
+		transform: translate(500px,-50%);
+		opacity: 0;
+	}
+
 }
